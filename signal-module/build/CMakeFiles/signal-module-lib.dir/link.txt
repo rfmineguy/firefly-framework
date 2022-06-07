@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libsignal-module-lib.a CMakeFiles/signal-module-lib.dir/src/dispatcher.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libsignal-module-lib.a

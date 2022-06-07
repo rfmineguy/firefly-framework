@@ -1,4 +1,0 @@
-/Users/rileyfischer/Documents/dev/graphics/firefly-framework/resource-module/build/CMakeFiles/resource-module-exec.dir
-/Users/rileyfischer/Documents/dev/graphics/firefly-framework/resource-module/build/CMakeFiles/resource-module-lib.dir
-/Users/rileyfischer/Documents/dev/graphics/firefly-framework/resource-module/build/CMakeFiles/edit_cache.dir
-/Users/rileyfischer/Documents/dev/graphics/firefly-framework/resource-module/build/CMakeFiles/rebuild_cache.dir

@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libresource-module-lib.a CMakeFiles/resource-module-lib.dir/src/resourceManager.cpp.o CMakeFiles/resource-module-lib.dir/src/resource.cpp.o CMakeFiles/resource-module-lib.dir/src/texture.cpp.o CMakeFiles/resource-module-lib.dir/src/sound.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libresource-module-lib.a

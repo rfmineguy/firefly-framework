@@ -1,0 +1,9 @@
+[submodule "rendering-module/vendor/glfw"]
+	path = rendering-module/vendor/glfw
+	url = https://github.com/glfw/glfw
+[submodule "rendering-module/vendor/glad"]
+	path = rendering-module/vendor/glad
+	url = https://github.com/Olgardos/glad
+[submodule "rendering-module/vendor/glm"]
+	path = rendering-module/vendor/glm
+	url = https://github.com/g-truc/glm

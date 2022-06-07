@@ -3,3 +3,4 @@ rendering-module/build/
 resource-module/build/
 signal-module/build/
 test-game/build/
+build/

@@ -29,6 +29,8 @@ add_subdirectory(vendor/glfw)
 add_subdirectory(vendor/glm)
 add_subdirectory(../resource-module ${CMAKE_BINARY_DIR}/resource-module)
 
+message(STATUS ${CMAKE_BUILD_WAYLAND})
+
 include_directories(rendering-module 
     src/
     vendor/glfw/ 

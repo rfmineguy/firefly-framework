@@ -16,7 +16,7 @@ void Render2D::SetupRenderer(Window* winPtr) {
     printf("Initialized glad\n");
 
     ResourceManager::LoadResource<Quad>("", "renderer_quad");
-    ResourceManager::LoadResource<Shader>("default_shader", "default");
+    ResourceManager::LoadResource<Shader>("default_shader", "renderer_shader");
 }
 
 void Render2D::SetFramebuffer(Framebuffer* fb) {
@@ -42,19 +42,16 @@ void Render2D::ClearScreen() {
 }
 
 void Render2D::DrawRect() {
-    Instance().framebuffer->Bind();
-
-    Instance().framebuffer->Unbind();
+    Shader* s = ResourceManager::GetResource<Shader>("renderer_shader");
+    Quad* q = ResourceManager::GetResource<Quad>("renderer_quad");
+    s->Bind();
+    q->Bind();
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    printf("Draw call finished\n");
 }
 
 void Render2D::DrawCircle() {
-    Instance().framebuffer->Bind();
-
-    Instance().framebuffer->Unbind();
 }
 
 void Render2D::DrawSprite() {
-    Instance().framebuffer->Bind();
-
-    Instance().framebuffer->Unbind();
 }

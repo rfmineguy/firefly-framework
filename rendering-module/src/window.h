@@ -17,6 +17,8 @@ class Window {
         void Cleanup();
         Renderer::Framebuffer& GetFramebuffer();
 
+        static void error_callback(int, const char*);
+
     private:
         GLFWwindow* windowPtr;
         Renderer::Framebuffer framebuffer;

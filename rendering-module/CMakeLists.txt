@@ -7,6 +7,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -pthread")
 
+file (COPY res DESTINATION ${CMAKE_BINARY_DIR})
+
 set(MAIN
     src/main.cpp)
 
@@ -30,7 +32,7 @@ add_subdirectory(../resource-module ${CMAKE_BINARY_DIR}/resource-module)
 include_directories(rendering-module 
     src/
     vendor/glfw/ 
-    vendor/glad/include/ 
+    vendor/glad/include/
     vendor/glm
     ../resource-module/src/)
 

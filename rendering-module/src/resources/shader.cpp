@@ -4,8 +4,8 @@
 
 Shader::Shader(const std::string& path)
 :Resource(path) {
-    ReadFile("res/" + path + "/vert.shader", vertSource);
-    ReadFile("res/" + path + "/frag.shader", fragSource);
+    ReadFile("../res/" + path + "/vert.shader", vertSource);
+    ReadFile("../res/" + path + "/frag.shader", fragSource);
 
     //  COMPILE VERTEX SHADER [BEGIN]
     vertexShaderHandle = glCreateShader(GL_VERTEX_SHADER);

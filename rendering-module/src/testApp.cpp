@@ -13,6 +13,6 @@ void TestApp::Update(double dt) {
 }
 
 void TestApp::Render() {
-    //Renderer::Render2D::ClearScreen();
-    //Renderer::Render2D::DrawRect();
+    Renderer::Render2D::ClearScreen();
+    Renderer::Render2D::DrawRect();
 }

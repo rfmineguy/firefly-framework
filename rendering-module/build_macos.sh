@@ -16,10 +16,16 @@ fi
 cd build
 
 if [[ $1 == "-normal"* ]]; then
-    cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=on
+    cmake .. -G "Unix Makefiles" -DGEN_APP_BUNDLE=off -DCMAKE_OSX_64=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=on
     cmake --build .
     if [[ $2 != "-norun"* ]]; then
         ./rendering-module-exec
+    fi
+elif [[ $1 == "-app"* ]]; then
+    cmake .. -G "Unix Makefiles" -DGEN_APP_BUNDLE=on -DCMAKE_OSX_64=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=on
+    cmake --build .
+    if [[ $2 != "-norun"* ]]; then
+        open -n ./rendering-module-exec
     fi
 else
     echo "Invalid flag used"
